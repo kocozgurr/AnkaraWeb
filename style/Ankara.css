@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.navbar1,
+.navbar2 {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar1 a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar2 a {
+    color: red;
+
+}
+
+.navbar1 a:hover,
+.navbar2 a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 22px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.navbar2 {
+    width: auto;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2link {
+
+    padding-right: 10%;
+}
+
+.nav2link a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    margin-left: 10%;
+}
+
+.s-container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.s-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.s-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+}
+
+.s-img {
+    width: 100%;
+    height: 100vh;
+}
+
+/*  */
+.card-container {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+.card {
+
+    width: 50%;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    transition: transform 0.9s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content p {
+    margin: 0;
+    color: #333;
+}
+
+/*  */
+.gezi-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+
+}
+
+.content-gezi {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.content-gezi h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fbff00;
+
+}
+
+.content-gezi p {
+    color: #fbff00;
+    font-size: 1.5em;
+
+}
+
+.hesap-cont {
+    background-color: #fff;
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: -20%;
+}
+
+.hesap-cont span {
+    z-index: 2;
+    color: #333;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hesap-cont p {
+    z-index: 2;
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+
+.counter {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    z-index: 2;
+}
+
+.counter button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+select {
+    font-size: 22px;
+    margin-top: -5%;
+}
+
+/* yiyecekler */
+.containerYemek {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+
+
+}
+
+.yemek {
+    height: 50vh;
+    width: 35%;
+    background-color: aliceblue;
+    margin: 4%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.yemek img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.y-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+.y-content span {
+    color: #333;
+    font-size: 24px;
+}
